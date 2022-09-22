@@ -7,8 +7,8 @@ On both the master and worker nodes:
        systemctl enable docker && systemctl start docker
        open file /etc/yum.repos.d/kubernetes.repo
        paste below lines :
-            [kubernetes]
-            name=Kubernetes
+        [kubernetes]
+        name=Kubernetes
         baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
         enabled=1
         gpgcheck=1
