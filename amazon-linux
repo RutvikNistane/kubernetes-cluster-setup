@@ -17,8 +17,8 @@ On both the master and worker nodes:
         exclude=kube*
        open file /etc/sysctl.d/k8s.conf
        paste below lines:
-            net.bridge.bridge-nf-call-ip6tables = 1
-            net.bridge.bridge-nf-call-iptables = 1
+       net.bridge.bridge-nf-call-ip6tables = 1
+       net.bridge.bridge-nf-call-iptables = 1
        sysctl --system
        setenforce 0
        yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
